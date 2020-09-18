@@ -1,0 +1,62 @@
+.GatyaModal__Overlay {
+    opacity: 0;
+    transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.gatya {
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.gatya .gatya-start-btn {
+  font-size: large;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 5em;
+  border-style: hidden;
+  background-color: #009688;
+  color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 4px #546E7A;
+}
+
+.gatya .gatya-start-btn:hover {
+    background-color: #00695c;
+    color: #ffffff;
+  }
+
+.gatya .title {
+    border-color: #ffffff;
+}
+
+.gatya-recieve-btn {
+    padding: 4px 12px;
+    background-color: #009688;
+    color: #fff;
+    border-radius: 5em;
+    border-style: hidden;
+    outline: none;
+    box-shadow: 0 0 4px #546E7A;
+}
+
+.gatya-recieve-btn:hover {
+    background-color: #00695c;
+    color: #fff;
+}
+
+.gatya-details {
+    min-width: 240px;
+    min-height: 60px;
+    padding: auto;
+    text-align: center;
+    margin-top: 8%;
+}

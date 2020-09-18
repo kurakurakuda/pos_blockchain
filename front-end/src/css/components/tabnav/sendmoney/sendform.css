@@ -1,0 +1,61 @@
+.sendform {
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 10px;
+    width: 25%;
+    height: 40%;
+    border: medium solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    color: #424242;
+  }
+
+  .sendform .select-user {
+    width: 90%;
+    margin: 12px;
+  }
+
+  .sendform .input-coin {
+    margin: 24px 12px 12px 12px;
+  }
+
+  .sendform .input-coin-form {
+    width: 90%;
+    height: 32px;
+    font-size: larger;
+    border: solid #e0e0e0;
+    border-radius: 4px;
+    padding: 0 8px 0 8px;
+    text-align: end;
+    outline: none;
+  }
+
+  .sendform .input-coin-form::placeholder {
+    font-size: smaller;
+  }
+
+  .sendform .send-button {
+    margin: 8px;
+    padding: 4px 12px;
+    background-color: #ec407a;
+    color: #fff;
+    border-radius: 5em;
+    border-style: hidden;
+    outline: none;
+    box-shadow: 0 0 4px #546E7A;
+  }
+  
+  .sendform .send-button:hover {
+    background-color: #ad1457;
+    color: #fff;
+  }
+  
+  .sendform .send-button:active {
+    transform: scale(0.90);
+  }
+
+  .sendform .send-button:disabled {
+    background-color: #f8bbd0;
+    color: #fff;
+    font-weight: bold;
+  }

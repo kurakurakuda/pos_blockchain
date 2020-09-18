@@ -1,0 +1,58 @@
+version: "3"
+services:
+  dbserver:
+    container_name: pos_blockchain_db
+    build: ./infra/mysql/
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: pos_blockchain_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rootpassword
+    expose:
+      - 3306
+    ports:
+      - 3306:3306
+    volumes:
+      # MySQLの設定ファイル
+      - ./infra/mysql/config:/etc/mysql/conf.d
+      # 起動スクリプト
+      - ./infra/mysql/initdb:/docker-entrypoint-initdb.d
+  redis:
+    container_name: pos_blockchain_redis
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
+    depends_on:
+      # dbserverが起動してから、appを起動
+      - dbserver
+    volumes:
+      - "./data/redis:/data"
+  backend:
+    container_name: pos_blockchain_backend
+    build: ./back-end/
+    depends_on:
+      # redisが起動してから、appを起動
+      - redis
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    environment:
+      # mysqlの接続設定 host:portはコンテナ名指定
+      spring.datasource.driverClassName: "com.mysql.cj.jdbc.Driver"
+      spring.datasource.url: "jdbc:mysql://dbserver/pos_blockchain_db"
+      spring.datasource.username: "user"
+      spring.datasource.password: "password"
+  frontend:
+    container_name: pos_blockchain_frontend
+    build: ./front-end/
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+    volumes:
+     - ./:/usr/src/app
+volumes:
+  mysql_db:
+    driver: local

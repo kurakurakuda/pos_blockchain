@@ -1,0 +1,8 @@
+.productarea {
+  display: flex;
+}
+
+.productarea .card-table {
+  display: flex;
+  margin-left: 10%;
+}

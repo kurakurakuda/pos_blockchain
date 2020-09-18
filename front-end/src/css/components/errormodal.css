@@ -1,0 +1,35 @@
+.ErrorModal__Overlay {
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.errormodal {
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.errormodal .gatya-start-btn {
+  font-size: large;
+  font-weight: bold;
+  padding: 8px 20px;
+  background-color: #009688;
+  color: #ffffff;
+}
+
+.errormodal .gatya-start-btn:hover {
+    background-color: #00695c;
+    color: #ffffff;
+  }
+
+.errormodal .title {
+    border-color: #ffffff;
+}

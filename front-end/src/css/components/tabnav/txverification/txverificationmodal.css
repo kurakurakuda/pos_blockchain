@@ -1,0 +1,88 @@
+.TxVerificationModal__Overlay {
+    opacity: 0;
+    transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.txverificationmomodal {
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.txverificationmomodal .txverificationmomodal-start-btn {
+  font-size: large;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 5em;
+  border-style: hidden;
+  background-color: #9c27B0;
+  color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 4px #546E7A;
+}
+
+.txverificationmomodal .txverificationmomodal-start-btn:hover {
+    background-color: #6a1b9a;
+    color: #ffffff;
+}
+
+.txverificationmomodal .title {
+    border-color: #ffffff;
+}
+
+.txverificationmomodal-recieve-btn {
+    padding: 4px 12px;
+    background-color: #9c27b0;
+    color: #fff;
+    border-radius: 5em;
+    border-style: hidden;
+    outline: none;
+    box-shadow: 0 0 4px #546E7A;
+    margin-top: 4%;
+}
+
+.txverificationmomodal-recieve-btn:hover {
+    background-color: #6a1b9a;
+    color: #fff;
+}
+
+.txverificationmomodal-details {
+    min-width: 400px;
+    min-height: 60px;
+    padding: auto;
+    text-align: center;
+}
+
+.txverificationmomodal-details-column {
+    width: 100%;
+    margin: auto;
+    padding: 4px;
+}
+
+.txverificationmomodal-details-header {
+    margin: auto;
+    margin-top: 4px;
+    padding: 4px;
+    border: medium solid #e0e0e0;
+    text-align: center;
+    color: #424242;
+    display: flex;
+}
+
+.txverificationmomodal-details-items {
+    padding: 4px;
+    border-bottom: medium solid #e0e0e0;
+    border-left: medium solid #e0e0e0;
+    border-right: medium solid #e0e0e0;
+    text-align: center;
+    color: #424242;
+    display: flex;
+}

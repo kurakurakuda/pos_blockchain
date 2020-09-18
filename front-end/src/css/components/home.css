@@ -1,0 +1,21 @@
+.home {
+  padding: 4px;
+  height: calc(100% - 16px); /* 100% Full-height */
+  position: fixed; /* Stay in place */
+  overflow-x: auto;
+  overflow-y: auto;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */  
+}
+
+.home-expand {
+  width: calc(100% - 88px); /* 100% - 8px - padding - left */
+  top: 0;
+  left: 72px;
+  
+}
+
+.home-shrink {
+  width: calc(100% - 268px); /* 100% - 8px - padding - left */
+  top: 0;
+  left: 252px;
+}

@@ -1,0 +1,24 @@
+.user-in-sidenav {
+  margin: auto;
+  padding: 10px;
+  border-top-color: medium solid #9e9e9e;
+  border-bottom-color: medium solid #9e9e9e;
+  color: #424242;
+}
+
+.selected-user-in-sidenav {
+  background-color: #bdbdbd;
+}
+
+.user-in-sidenav .user {
+  display: flex;
+}
+
+.user-in-sidenav .avatar{
+  margin-right: 8px;
+}
+
+.user-in-sidenav .username{
+  text-align: left;
+  float: left;
+}

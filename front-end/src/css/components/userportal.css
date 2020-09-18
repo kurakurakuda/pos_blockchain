@@ -1,0 +1,33 @@
+.user-portal {
+  background-color: #ffffff;
+  margin: 10px auto;
+  padding: 10px;
+  width: 240px;
+  border: medium solid #e0e0e0;
+  border-radius: 8px;
+  text-align: center;
+  color: #424242;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.user-portal .user {
+  display: flex;
+}
+
+.user-portal .avatar{
+  margin-right: 8px;
+}
+
+.user-portal .username{
+  text-align: left;
+  font-weight: bolder;
+  font-size: larger;
+  float: left;
+}
+
+.user-portal .coin{
+  text-align: right;
+  font-size: smaller;
+}

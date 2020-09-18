@@ -1,0 +1,66 @@
+.history {
+    background-color: #ffffff;
+    margin: 0 8px;
+    width: 98%;
+    text-align: center;
+  }
+
+.history .header {
+  padding: 4px;
+  border: medium solid #e0e0e0;
+  text-align: center;
+  color: #424242;
+  display: flex;
+}
+
+.history .column {
+  width: 20%;
+  margin: auto;
+  padding: 4px;
+}
+
+.history .item {
+  padding: 4px;
+  border-bottom: medium solid #e0e0e0;
+  border-left: medium solid #e0e0e0;
+  border-right: medium solid #e0e0e0;
+  text-align: center;
+  color: #424242;
+  display: flex;
+}
+
+.history .label {
+  margin: 0 10%;
+  box-shadow: 0 0 4px #546E7A;
+}
+
+.history .type-purchase {
+  background-color: #69f0ae;
+}
+
+.history .type-send {
+  background-color: #40c4ff;
+}
+
+.history .type-gatya {
+  background-color: #ffab40;
+}
+
+.history button {
+  padding: 4px 12px;
+  background-color: #3f51b5;
+  color: #fff;
+  border-radius: 5em;
+  border-style: hidden;
+  outline: none;
+  box-shadow: 0 0 4px #546E7A;
+}
+
+.history button:hover {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+.history button:active {
+  transform: scale(0.90);
+}
